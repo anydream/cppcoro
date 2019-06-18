@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{10d8584c-49d9-4266-81bb-4b7fa4831af8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lib\async_auto_reset_event.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\async_manual_reset_event.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\async_mutex.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\auto_reset_event.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\cancellation_registration.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\cancellation_source.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\cancellation_state.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\cancellation_token.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\file.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\file_read_operation.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\file_write_operation.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\io_service.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\ip_address.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\ip_endpoint.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\ipv4_address.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\ipv4_endpoint.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\ipv6_address.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\ipv6_endpoint.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\lightweight_manual_reset_event.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\read_only_file.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\read_write_file.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\readable_file.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\socket.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\socket_accept_operation.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\socket_connect_operation.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\socket_disconnect_operation.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\socket_helpers.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\socket_recv_from_operation.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\socket_recv_operation.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\socket_send_operation.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\socket_send_to_operation.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\spin_mutex.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\spin_wait.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\static_thread_pool.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\writable_file.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\write_only_file.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="test\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\async_auto_reset_event_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\async_generator_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\async_latch_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\async_manual_reset_event_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\async_mutex_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\cancellation_token_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\counted.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\file_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\generator_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\io_service_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ip_address_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ip_endpoint_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ipv4_address_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ipv4_endpoint_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ipv6_address_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ipv6_endpoint_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\multi_producer_sequencer_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\recursive_generator_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\scheduling_operator_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\sequence_barrier_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\shared_task_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\single_consumer_async_auto_reset_event_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\single_producer_sequencer_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\socket_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\static_thread_pool_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\sync_wait_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\task_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\when_all_ready_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\when_all_tests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

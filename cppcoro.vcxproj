@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{9E38BEF0-8775-4161-BEA8-FDA80CAEA68B}</ProjectGuid>
+    <RootNamespace>cppcoro</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="configs.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="configs.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="configs.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="configs.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <StackReserveSize>4194304</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="lib\async_auto_reset_event.cpp" />
+    <ClCompile Include="lib\async_manual_reset_event.cpp" />
+    <ClCompile Include="lib\async_mutex.cpp" />
+    <ClCompile Include="lib\auto_reset_event.cpp" />
+    <ClCompile Include="lib\cancellation_registration.cpp" />
+    <ClCompile Include="lib\cancellation_source.cpp" />
+    <ClCompile Include="lib\cancellation_state.cpp" />
+    <ClCompile Include="lib\cancellation_token.cpp" />
+    <ClCompile Include="lib\file.cpp" />
+    <ClCompile Include="lib\file_read_operation.cpp" />
+    <ClCompile Include="lib\file_write_operation.cpp" />
+    <ClCompile Include="lib\io_service.cpp" />
+    <ClCompile Include="lib\ipv4_address.cpp" />
+    <ClCompile Include="lib\ipv4_endpoint.cpp" />
+    <ClCompile Include="lib\ipv6_address.cpp" />
+    <ClCompile Include="lib\ipv6_endpoint.cpp" />
+    <ClCompile Include="lib\ip_address.cpp" />
+    <ClCompile Include="lib\ip_endpoint.cpp" />
+    <ClCompile Include="lib\lightweight_manual_reset_event.cpp" />
+    <ClCompile Include="lib\readable_file.cpp" />
+    <ClCompile Include="lib\read_only_file.cpp" />
+    <ClCompile Include="lib\read_write_file.cpp" />
+    <ClCompile Include="lib\socket.cpp" />
+    <ClCompile Include="lib\socket_accept_operation.cpp" />
+    <ClCompile Include="lib\socket_connect_operation.cpp" />
+    <ClCompile Include="lib\socket_disconnect_operation.cpp" />
+    <ClCompile Include="lib\socket_helpers.cpp" />
+    <ClCompile Include="lib\socket_recv_from_operation.cpp" />
+    <ClCompile Include="lib\socket_recv_operation.cpp" />
+    <ClCompile Include="lib\socket_send_operation.cpp" />
+    <ClCompile Include="lib\socket_send_to_operation.cpp" />
+    <ClCompile Include="lib\spin_mutex.cpp" />
+    <ClCompile Include="lib\spin_wait.cpp" />
+    <ClCompile Include="lib\static_thread_pool.cpp" />
+    <ClCompile Include="lib\win32.cpp" />
+    <ClCompile Include="lib\writable_file.cpp" />
+    <ClCompile Include="lib\write_only_file.cpp" />
+    <ClCompile Include="test\async_auto_reset_event_tests.cpp" />
+    <ClCompile Include="test\async_generator_tests.cpp" />
+    <ClCompile Include="test\async_latch_tests.cpp" />
+    <ClCompile Include="test\async_manual_reset_event_tests.cpp" />
+    <ClCompile Include="test\async_mutex_tests.cpp" />
+    <ClCompile Include="test\cancellation_token_tests.cpp" />
+    <ClCompile Include="test\counted.cpp" />
+    <ClCompile Include="test\file_tests.cpp" />
+    <ClCompile Include="test\generator_tests.cpp" />
+    <ClCompile Include="test\io_service_tests.cpp" />
+    <ClCompile Include="test\ipv4_address_tests.cpp" />
+    <ClCompile Include="test\ipv4_endpoint_tests.cpp" />
+    <ClCompile Include="test\ipv6_address_tests.cpp" />
+    <ClCompile Include="test\ipv6_endpoint_tests.cpp" />
+    <ClCompile Include="test\ip_address_tests.cpp" />
+    <ClCompile Include="test\ip_endpoint_tests.cpp" />
+    <ClCompile Include="test\main.cpp" />
+    <ClCompile Include="test\multi_producer_sequencer_tests.cpp" />
+    <ClCompile Include="test\recursive_generator_tests.cpp" />
+    <ClCompile Include="test\scheduling_operator_tests.cpp" />
+    <ClCompile Include="test\sequence_barrier_tests.cpp" />
+    <ClCompile Include="test\shared_task_tests.cpp" />
+    <ClCompile Include="test\single_consumer_async_auto_reset_event_tests.cpp" />
+    <ClCompile Include="test\single_producer_sequencer_tests.cpp" />
+    <ClCompile Include="test\socket_tests.cpp" />
+    <ClCompile Include="test\static_thread_pool_tests.cpp" />
+    <ClCompile Include="test\sync_wait_tests.cpp" />
+    <ClCompile Include="test\task_tests.cpp" />
+    <ClCompile Include="test\when_all_ready_tests.cpp" />
+    <ClCompile Include="test\when_all_tests.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

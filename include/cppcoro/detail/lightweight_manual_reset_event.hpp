@@ -7,7 +7,7 @@
 
 #include <cppcoro/config.hpp>
 
-#if CPPCORO_OS_LINUX || (CPPCORO_OS_WINNT >= 0x0602)
+#if CPPCORO_OS_LINUX || (false)
 # include <atomic>
 # include <cstdint>
 #elif CPPCORO_OS_WINNT
@@ -39,7 +39,7 @@ namespace cppcoro
 
 #if CPPCORO_OS_LINUX
 			std::atomic<int> m_value;
-#elif CPPCORO_OS_WINNT >= 0x0602
+#elif false
 			// Windows 8 or newer we can use WaitOnAddress()
 			std::atomic<std::uint8_t> m_value;
 #elif CPPCORO_OS_WINNT
